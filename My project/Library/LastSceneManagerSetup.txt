@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Dillan's SandBox/TouchControls.unity
+- path: Assets/Scenes/RyansControlSandbox/TouchControls.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
