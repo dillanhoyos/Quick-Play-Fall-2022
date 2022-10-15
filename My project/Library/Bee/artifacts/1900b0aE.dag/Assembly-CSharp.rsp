@@ -366,7 +366,7 @@
 "Assets/Scenes/Ryans Control Sandbox/Scripts/PlayerFunctionality.cs"
 "Assets/Scenes/Ryans Control Sandbox/Scripts/UIBtnController.cs"
 "Assets/ThirdPersonMovement.cs"
-"Assets/TPMovementCopy.cs"
+"Assets/ThirdPersonMovementCopy.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 
