@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/RyansControlSandbox/TouchControls.unity
+- path: Assets/Scenes/Ryans Control Sandbox/Scenes/RyansTouchControls.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

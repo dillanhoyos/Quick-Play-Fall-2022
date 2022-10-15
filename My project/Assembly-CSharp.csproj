@@ -46,7 +46,9 @@
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
-     <Compile Include="Assets\Scenes\RyansControlSandbox\BtnController.cs" />
+     <Compile Include="Assets\Scenes\Ryans Control Sandbox\Scripts\PlayerFunctionality.cs" />
+     <Compile Include="Assets\Scenes\Ryans Control Sandbox\Scripts\UIBtnController.cs" />
+     <Compile Include="Assets\TPMovementCopy.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

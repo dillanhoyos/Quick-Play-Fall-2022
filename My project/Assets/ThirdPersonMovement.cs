@@ -6,7 +6,6 @@ public class ThirdPersonMovement : MonoBehaviour
 {
     public CharacterController controller;
     public Joystick joystick;
-    public Touch button;
     public Transform cam;
 
     public float speed = 10f;
@@ -19,8 +18,6 @@ public class ThirdPersonMovement : MonoBehaviour
         float horizontal = joystick.Horizontal;
         float vertical = joystick.Vertical;
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
-
-        gravity += (Physics.gravity.y * Time.deltaTime);
          
         if(direction.magnitude >=0.1f)
 
@@ -31,6 +28,5 @@ public class ThirdPersonMovement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
-
     }
 }

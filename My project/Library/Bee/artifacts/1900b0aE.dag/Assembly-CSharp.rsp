@@ -363,8 +363,10 @@
 "Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs"
 "Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
 "Assets/Movement.cs"
-"Assets/Scenes/RyansControlSandbox/BtnController.cs"
+"Assets/Scenes/Ryans Control Sandbox/Scripts/PlayerFunctionality.cs"
+"Assets/Scenes/Ryans Control Sandbox/Scripts/UIBtnController.cs"
 "Assets/ThirdPersonMovement.cs"
+"Assets/TPMovementCopy.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 
