@@ -9,6 +9,8 @@ public class PlayerFunctionality : MonoBehaviour
     public bool isAttacking;
     public bool isJumping;
 
+    public float JumpSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +18,8 @@ public class PlayerFunctionality : MonoBehaviour
 
         PlayerBody = GetComponent<Rigidbody>();
         isJumping = false;
+
+        JumpSpeed = 100f;
     }
 
     // Update is called once per frame
@@ -33,7 +37,7 @@ public class PlayerFunctionality : MonoBehaviour
     {
         if (!isJumping)
         {
-            PlayerBody.velocity += Vector3.up * 5;
+            PlayerBody.velocity += Vector3.up * JumpSpeed;
             Debug.Log("JUMP PRESSED");
         }
     }
