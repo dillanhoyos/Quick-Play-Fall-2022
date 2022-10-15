@@ -8,15 +8,21 @@ public class ThirdPersonMovement : MonoBehaviour
     public Joystick joystick;
     public Transform cam;
 
+    public Rigidbody PlayerBody;
+
     public float speed = 10f;
     public float turnSmoothTime = 0.1f;
     public float turnSmoothVelocity;
+    public float JumpSpeed;
 
-  
+    public bool isJumping;
 
     void Start()
     {
+        PlayerBody = FindObjectOfType<Rigidbody>();
+        isJumping = false;
 
+        JumpSpeed = 100f;
     }
 
 
@@ -37,4 +43,14 @@ public class ThirdPersonMovement : MonoBehaviour
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
     }
+
+    public void PlayerJump()
+    {
+        if (!isJumping)
+        {
+            PlayerBody.velocity += Vector3.up * JumpSpeed;
+            Debug.Log("JUMP PRESSED");
+        }
+    }
 }
+
