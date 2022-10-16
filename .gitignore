@@ -72,3 +72,13 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 *.DS_Store
+
+#Old Project Directory
+/[Mm]y[Pp]roject/
+/[Mm]y[Pp]roject/[Ll]ibrary/
+/[Mm]y[Pp]roject/[Tt]emp/
+/[Mm]y[Pp]roject/[Oo]bj/
+/[Mm]y[Pp]roject/[Bb]uild/
+/[Mm]y[Pp]roject/[Bb]uilds/
+/[Mm]y[Pp]roject/[Ll]ogs/
+/[Mm]y[Pp]roject/[Uu]ser[Ss]ettings/
