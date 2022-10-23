@@ -4,7 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Ryans Folder/Scenes/MainMenu.unity
+    guid: 609fb843a8339da40b24dc59c1dd033a
+  - enabled: 1
+    path: Assets/Scenes/Ryans Folder/Scenes/ConfigMenu.unity
+    guid: 1e402b983ec672e4aba49abd0f9ae77d
+  - enabled: 1
+    path: Assets/Scenes/Ryans Folder/Scenes/RyansTouchControlsCopy.unity
+    guid: f550fb294a17da546a637edd085a7ada
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 380231e067cf6457ab7d130c6e9e4c87, type: 2}
