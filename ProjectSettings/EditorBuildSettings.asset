@@ -4,7 +4,24 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Dillan's SandBox/Multiplayer/Menu.unity
+    guid: dacd0fc5330df4e628861c366359ebba
+  - enabled: 0
+    path: Assets/Scenes/Dillan's SandBox/Multiplayer/GameList.unity
+    guid: d3228e6b398a24a5e9a514f871008926
+  - enabled: 0
+    path: Assets/Scenes/Dillan's SandBox/Multiplayer/MyOtherScene.unity
+    guid: a827d819d15ca4332a9f7b9318688b3f
+  - enabled: 0
+    path: Assets/Scenes/Dillan's SandBox/Multiplayer/MyScene.unity
+    guid: a62dc43eda6b4473c929498b206b96b9
+  - enabled: 1
+    path: Assets/Scenes/Dillan's SandBox/NEWMULTIPLAYER/New Scene.unity
+    guid: 2b182601734154f28b3c9833ff046306
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 2ebf0b9ca2fe34a22bdca4192d263b9e,
+      type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 380231e067cf6457ab7d130c6e9e4c87, type: 2}
