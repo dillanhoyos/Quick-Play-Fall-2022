@@ -4,16 +4,16 @@ using UnityEngine;
 using Mirror;
 
 
-public class PlayerHealth : NetworkBehaviour
+public class BossHealth : NetworkBehaviour
 {
 
     [SyncVar]
     public int health = 100;
 
 
-  
+
     [ClientRpc]
-    public void PlayerDamage(int amount)
+    public void BossDamage(int amount)
     {
         health -= amount;
         if (health <= 0)
@@ -39,7 +39,7 @@ public class PlayerHealth : NetworkBehaviour
         go.transform.position = newPos.position;
         go.transform.rotation = newPos.rotation;
         yield return new WaitForSeconds(1f);
-        NetworkServer.Spawn(go, identity.assetId,identity.connectionToServer);
+        NetworkServer.Spawn(go, identity.assetId, identity.connectionToServer);
 
 
 

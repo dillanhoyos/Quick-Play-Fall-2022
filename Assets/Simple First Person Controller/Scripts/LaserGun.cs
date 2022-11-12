@@ -9,6 +9,9 @@ public class LaserGun : NetworkBehaviour
     public Transform laserTransform;
     public LineRenderer line;
 
+
+    
+
     void Update()
     {
         if(isLocalPlayer && Input.GetMouseButtonDown(0))
@@ -17,29 +20,51 @@ public class LaserGun : NetworkBehaviour
         }
     }
 
+
+     void Start()
+    {
+       
+    }
+
     [Command]
     public void CmdShoot()
     {
+
         Ray ray = new Ray(laserTransform.position, laserTransform.forward);
         if (Physics.Raycast(ray, out RaycastHit hit, 100f))
         {
             //we hit something - draw the line
             //Check hit
-            var playerHealth = hit.collider.gameObject.GetComponent<PlayerHealth>();
-            if(playerHealth)
+            var playerHealth = hit.collider.gameObject.GetComponent<BossHealth>();
+            var playerLocation = hit.collider.gameObject.GetComponent<BOSSAI>();
+            Vector3 Loc = gameObject.transform.position;
+            var playerConnection = hit.collider.gameObject.GetComponent<NetworkIdentity>();
+
+            Debug.Log("are you playinng?");
+
+            if (playerHealth)
             {
                 //respawn
-             playerHealth.Damage(20);
+             playerHealth.BossDamage(20);
+             playerLocation.locationtoshoot(Loc);
+
+            // command send target positiion
+                
+
+
+                
             }
             RpcDrawLaser(laserTransform.position, hit.point);
         }
         else
         {
-            RpcDrawLaser(laserTransform.position, laserTransform.position + laserTransform.position * 100f);
+            RpcDrawLaser(laserTransform.position, laserTransform.forward);
         }
     }
 
 
+   
+ 
 
 
     [ClientRpc]
